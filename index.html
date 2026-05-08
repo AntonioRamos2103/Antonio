@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Página Personal</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: #d9fdd3;
+    text-align:center;
+    margin:0;
+    padding:20px;
+}
+
+.contenedor{
+    width:450px;
+    margin:auto;
+}
+
+.cuadro{
+    border:2px solid #2e7d32;
+    padding:15px;
+    margin:15px;
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Colores llamativos */
+.cuadro:nth-child(1){
+    background:#b9f6ca;
+}
+
+.cuadro:nth-child(2){
+    background:#ccff90;
+}
+
+.cuadro:nth-child(3){
+    background:#a5d6a7;
+}
+
+.cuadro:nth-child(4){
+    background:#81c784;
+    color:white;
+}
+
+.cuadro:nth-child(5){
+    background:#66bb6a;
+    color:white;
+}
+
+.cuadro:nth-child(6){
+    background:#4caf50;
+    color:white;
+}
+
+.cuadro:nth-child(7){
+    background:#43a047;
+    color:white;
+}
+
+.cuadro:nth-child(8){
+    background:#2e7d32;
+    color:white;
+}
+
+/* CARRUSEL */
+.carrusel{
+    width:300px;
+    height:200px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:15px;
+    border:3px solid white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides{
+    display:flex;
+    width:300%;
+    animation:cambiar 9s infinite;
+}
+
+.slides img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+}
+
+@keyframes cambiar{
+    0%{margin-left:0;}
+    30%{margin-left:0;}
+
+    35%{margin-left:-100%;}
+    65%{margin-left:-100%;}
+
+    70%{margin-left:-200%;}
+    100%{margin-left:-200%;}
+}
+
+.footer{
+    border:2px solid #1b5e20;
+    padding:20px;
+    margin-top:20px;
+    background:#00c853;
+    color:white;
+    border-radius:12px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+
+<div class="cuadro">
+<h1>Título</h1>
+</div>
+
+<div class="cuadro">
+<h2>Datos Personales</h2>
+<p>Nombre: Juan</p>
+<p>Edad: 20</p>
+<p>Carrera: Ingeniería de Sistemas</p>
+</div>
+
+<div class="cuadro">
+<h2>Datos Generales</h2>
+<p>Pasatiempo: Escuchar música</p>
+<p>Estado: Soltero</p>
+</div>
+
+<div class="cuadro">
+<h2>Canción Favorita</h2>
+<p>Título: Mi Canción</p>
+
+<video width="300" controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<div class="cuadro">
+<h2>Juego Favorito</h2>
+<p>Free Fire</p>
+</div>
+
+<div class="cuadro">
+<h2>Misión y Visión</h2>
+<p>Misión: Terminar mi carrera profesional.</p>
+<p>Visión: Ser un buen ingeniero.</p>
+</div>
+
+<div class="cuadro">
+<h2>Tareas Destacadas</h2>
+
+<img src="https://imgs.search.brave.com/Tk4ULiTddVPWPSSesCyEaxS0J4AtGgSrVIBPmi8f11A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvcmFk/aW9oZWFkLWFsYnVt/LWhhaWwtdG8tdGhl/LXRoaWVmLWlueDBx/NDd4ZDR1eGR3NnIu/anBn" width="200">
+
+<p>Descripción de la imagen generada con IA.</p>
+
+<br><br>
+
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<!-- NUEVO RECUADRO CON CARRUSEL -->
+<div class="cuadro">
+<h2>Galería de Imágenes</h2>
+
+<div class="carrusel">
+    <div class="slides">
+        <img src="https://imgs.search.brave.com/DjWGkqEjsK9fBnrNATwd5ZfyGRqvYi1VXRgeA9G8bqQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9zcGlk/ZXItbWFuLTMtMTU2/MTczMjYyMy5qcGc_/Y3JvcD0wLjk5NzI4/OTk3Mjg5OTcyOXh3/OjF4aDtjZW50ZXIs/dG9w" alt="Imagen 1">
+        <img src="https://imgs.search.brave.com/EOtbES48rctGxmGR22f8ldOPV0VCm4jveb8cquis41A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zbS5p/Z24uY29tL2lnbl9h/cC9pbWFnZS9oL2hv/dy10by13YXQvaG93/LXRvLXdhdGNoLXRo/ZS1zcGlkZXItbWFu/LW1vdmllcy1pbi1v/cmRlcl9hM2s5Lmpw/Zw" alt="Imagen 2">
+        <img src="https://imgs.search.brave.com/Xnaai459qhAXTI_jiFbBWFsbrOGhhEjpYiGPCkFJwj0/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvdGh1bWJu/YWlsL3NwaWRlci1t/YW4tbm8td2F5LWhv/bWUtMTkyMC14LTEw/ODAtcGljdHVyZS0w/cDA4M2Rsc2RzYW1p/bmh5LndlYnA" alt="Imagen 3">
+    </div>
+</div>
+
+</div>
+
+<div class="footer">
+<h3>Footer Links</h3>
+<a href="#">Facebook</a> |
+<a href="#">Instagram</a> |
+<a href="#">TikTok</a>
+</div>
+
+</div>
+
+</body>
+</html>
