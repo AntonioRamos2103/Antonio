@@ -6,86 +6,94 @@
 
 <style>
 
+/* FONDO GENERAL */
 body{
-    font-family: Arial, sans-serif;
-    background: #d9fdd3;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#d9fdd3,#66bb6a,#1b5e20);
+    background-attachment: fixed;
     text-align:center;
     margin:0;
     padding:20px;
+    color:#222;
 }
 
+/* CONTENEDOR */
 .contenedor{
-    width:450px;
+    width:900px;
     margin:auto;
 }
 
+/* RECUADROS */
 .cuadro{
-    border:2px solid #2e7d32;
-    padding:15px;
-    margin:15px;
-    background:#ffffff;
-    border-radius:12px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    border:none;
+    padding:30px;
+    margin:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.95);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.4s;
 }
 
-/* Colores llamativos */
-.cuadro:nth-child(1){
-    background:#b9f6ca;
+.cuadro:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
 }
 
-.cuadro:nth-child(2){
-    background:#ccff90;
+/* ENCABEZADOS */
+h1{
+    font-size:50px;
+    color:#1b5e20;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.2);
 }
 
-.cuadro:nth-child(3){
-    background:#a5d6a7;
+h2{
+    font-size:32px;
+    color:#145a32;
 }
 
-.cuadro:nth-child(4){
-    background:#81c784;
-    color:white;
+p{
+    font-size:19px;
+    line-height:1.8;
 }
 
-.cuadro:nth-child(5){
-    background:#66bb6a;
-    color:white;
+/* IMÁGENES */
+img{
+    border-radius:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.4);
+    transition:0.3s;
 }
 
-.cuadro:nth-child(6){
-    background:#4caf50;
-    color:white;
+img:hover{
+    transform:scale(1.03);
 }
 
-.cuadro:nth-child(7){
-    background:#43a047;
-    color:white;
-}
-
-.cuadro:nth-child(8){
-    background:#2e7d32;
-    color:white;
+/* VIDEO */
+video{
+    border-radius:20px;
+    margin-top:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.4);
 }
 
 /* CARRUSEL */
 .carrusel{
-    width:300px;
-    height:200px;
+    width:600px;
+    height:350px;
     margin:auto;
     overflow:hidden;
-    border-radius:15px;
-    border:3px solid white;
-    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    border-radius:20px;
+    border:5px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
 }
 
 .slides{
     display:flex;
     width:300%;
-    animation:cambiar 9s infinite;
+    animation:cambiar 12s infinite;
 }
 
 .slides img{
-    width:300px;
-    height:200px;
+    width:600px;
+    height:350px;
     object-fit:cover;
 }
 
@@ -100,23 +108,50 @@ body{
     100%{margin-left:-200%;}
 }
 
-.footer{
-    border:2px solid #1b5e20;
-    padding:20px;
-    margin-top:20px;
-    background:#00c853;
+/* NUEVO RECUADRO DE VIDEOJUEGO */
+.juego-box{
+    background:linear-gradient(135deg,#1b1b1b,#2e7d32);
     color:white;
-    border-radius:12px;
+    padding:25px;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+.juego-box h3{
+    font-size:28px;
+    color:#00ff99;
+}
+
+.juego-box p{
+    color:#f1f1f1;
+}
+
+.juego-box img{
+    width:300px;
+    margin-top:15px;
+}
+
+/* FOOTER */
+.footer{
+    background:linear-gradient(135deg,#00c853,#1b5e20);
+    color:white;
+    border-radius:25px;
+    padding:30px;
+    margin-top:40px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
 }
 
 .footer a{
     color:white;
     text-decoration:none;
+    font-size:20px;
+    margin:15px;
     font-weight:bold;
 }
 
 .footer a:hover{
-    text-decoration:underline;
+    color:#d4ff00;
 }
 
 </style>
@@ -126,50 +161,123 @@ body{
 
 <div class="contenedor">
 
+<!-- INICIO -->
 <div class="cuadro">
-<h1>Título</h1>
+<h1>✨ SOOOY YOO ✨</h1>
+
+<p>
+Bienvenido a mi página personal 💚.
+Aquí podrás conocer más sobre mis gustos, metas,
+pasatiempos y proyectos personales.
+Me apasiona la tecnología y todo lo relacionado con el mundo digital.
+</p>
+
 </div>
 
+<!-- DATOS -->
 <div class="cuadro">
-<h2>Datos Personales</h2>
-<p>Nombre: Juan</p>
-<p>Edad: 20</p>
-<p>Carrera: Ingeniería de Sistemas</p>
+
+<h2>👤 Datos Personales</h2>
+
+<p><b>Nombre:</b> Juan</p>
+<p><b>Edad:</b> 22 años</p>
+<p><b>Carrera:</b> Ingeniería de Sistemas</p>
+
+<p>
+Soy una persona creativa y apasionada por aprender nuevas tecnologías.
+Me gusta programar, diseñar páginas web y explorar herramientas digitales modernas.
+</p>
+
 </div>
 
+<!-- GENERALES -->
 <div class="cuadro">
-<h2>Datos Generales</h2>
-<p>Pasatiempo: Escuchar música</p>
-<p>Estado: Soltero</p>
+
+<h2>🌟 Datos Generales</h2>
+
+<p><b>Pasatiempo:</b> Escuchar música</p>
+<p><b>Estado:</b> Soltero</p>
+
+<p>
+En mis tiempos libres disfruto escuchar música,
+jugar videojuegos, ver películas y aprender cosas nuevas sobre programación y diseño.
+</p>
+
 </div>
 
+<!-- CANCIÓN -->
 <div class="cuadro">
-<h2>Canción Favorita</h2>
-<p>Título: Mi Canción</p>
 
-<video width="300" controls>
+<h2>🎵 Canción Favorita</h2>
+
+<p>
+La música me ayuda a concentrarme y relajarme.
+Es una parte importante de mi vida porque me inspira todos los días.
+</p>
+
+<video width="600" controls>
 <source src="video.mp4" type="video/mp4">
 </video>
 
 </div>
 
+<!-- VIDEOJUEGO -->
 <div class="cuadro">
-<h2>Juego Favorito</h2>
-<p>Free Fire</p>
+
+<h2>🎮 Videojuego Favorito</h2>
+
+<div class="juego-box">
+
+<h3>🔥 Free Fire 🔥</h3>
+
+<p>
+Free Fire es uno de mis videojuegos favoritos porque combina estrategia,
+acción y trabajo en equipo.
+Me gusta competir con amigos, mejorar mis habilidades y vivir la emoción de cada partida.
+</p>
+
+<p>
+Lo que más me llama la atención del juego son sus personajes,
+los eventos especiales y la adrenalina de intentar sobrevivir hasta el final.
+</p>
+
+<img src="https://imgs.search.brave.com/TYu5BpWybkrlxxH1DfTI52cMGxetsYVnhSonuPvsfDQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5mb2JhZS5jb20v/cmVzaXplci92Mi9K/NENHWkxGSUtWQ1pI/SFRJU1RIM1YyUlVG/TS5qcGc_YXV0aD0z/OTU3NDI1ZTUyYzQ1/ZmFlNDJiZWY2M2U1/NDY3MmUxYzc4YTVm/MTc5Yjg5N2VmMjNm/MjcyNzJhODQxYTA5/NmUzJnNtYXJ0PXRy/dWUmd2lkdGg9MzUw/JmhlaWdodD0xOTcm/cXVhbGl0eT04NQ">
+
 </div>
 
-<div class="cuadro">
-<h2>Misión y Visión</h2>
-<p>Misión: Terminar mi carrera profesional.</p>
-<p>Visión: Ser un buen ingeniero.</p>
 </div>
 
+<!-- MISIÓN -->
 <div class="cuadro">
-<h2>Tareas Destacadas</h2>
 
-<img src="https://imgs.search.brave.com/Tk4ULiTddVPWPSSesCyEaxS0J4AtGgSrVIBPmi8f11A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvcmFk/aW9oZWFkLWFsYnVt/LWhhaWwtdG8tdGhl/LXRoaWVmLWlueDBx/NDd4ZDR1eGR3NnIu/anBn" width="200">
+<h2>🚀 Misión y Visión</h2>
 
-<p>Descripción de la imagen generada con IA.</p>
+<p>
+<b>Misión:</b> Terminar mi carrera universitaria y convertirme en un gran ingeniero de sistemas.
+</p>
+
+<p>
+<b>Visión:</b> Crear proyectos tecnológicos innovadores y alcanzar el éxito profesional.
+</p>
+
+<p>
+Mi objetivo es aprender constantemente y desarrollar habilidades que me permitan crecer profesionalmente.
+</p>
+
+</div>
+
+<!-- TAREAS -->
+<div class="cuadro">
+
+<h2>🖼️ Tareas Destacadas</h2>
+
+<img src="https://imgs.search.brave.com/Tk4ULiTddVPWPSSesCyEaxS0J4AtGgSrVIBPmi8f11A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvcmFk/aW9oZWFkLWFsYnVt/LWhhaWwtdG8tdGhl/LXRoaWVmLWlueDBx/NDd4ZDR1eGR3NnIu/anBn"
+width="400">
+
+<p>
+Esta imagen representa algunos de mis gustos artísticos y visuales.
+Me interesa el diseño digital y la creatividad en internet.
+</p>
 
 <br><br>
 
@@ -179,25 +287,45 @@ body{
 
 </div>
 
-<!-- NUEVO RECUADRO CON CARRUSEL -->
+<!-- CARRUSEL -->
 <div class="cuadro">
-<h2>Galería de Imágenes</h2>
+
+<h2>📸 Galería de Imágenes</h2>
+
+<p>
+Estas imágenes muestran algunos de mis personajes y películas favoritas.
+El carrusel automático le da un estilo moderno y dinámico a la página.
+</p>
 
 <div class="carrusel">
-    <div class="slides">
-        <img src="https://imgs.search.brave.com/DjWGkqEjsK9fBnrNATwd5ZfyGRqvYi1VXRgeA9G8bqQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9zcGlk/ZXItbWFuLTMtMTU2/MTczMjYyMy5qcGc_/Y3JvcD0wLjk5NzI4/OTk3Mjg5OTcyOXh3/OjF4aDtjZW50ZXIs/dG9w" alt="Imagen 1">
-        <img src="https://imgs.search.brave.com/EOtbES48rctGxmGR22f8ldOPV0VCm4jveb8cquis41A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zbS5p/Z24uY29tL2lnbl9h/cC9pbWFnZS9oL2hv/dy10by13YXQvaG93/LXRvLXdhdGNoLXRo/ZS1zcGlkZXItbWFu/LW1vdmllcy1pbi1v/cmRlcl9hM2s5Lmpw/Zw" alt="Imagen 2">
-        <img src="https://imgs.search.brave.com/Xnaai459qhAXTI_jiFbBWFsbrOGhhEjpYiGPCkFJwj0/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvdGh1bWJu/YWlsL3NwaWRlci1t/YW4tbm8td2F5LWhv/bWUtMTkyMC14LTEw/ODAtcGljdHVyZS0w/cDA4M2Rsc2RzYW1p/bmh5LndlYnA" alt="Imagen 3">
-    </div>
+
+<div class="slides">
+
+<img src="https://imgs.search.brave.com/DjWGkqEjsK9fBnrNATwd5ZfyGRqvYi1VXRgeA9G8bqQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9zcGlk/ZXItbWFuLTMtMTU2/MTczMjYyMy5qcGc_/Y3JvcD0wLjk5NzI4/OTk3Mjg5OTcyOXh3/OjF4aDtjZW50ZXIs/dG9w">
+
+<img src="https://imgs.search.brave.com/EOtbES48rctGxmGR22f8ldOPV0VCm4jveb8cquis41A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zbS5p/Z24uY29tL2lnbl9h/cC9pbWFnZS9oL2hv/dy10by13YXQvaG93/LXRvLXdhdGNoLXRo/ZS1zcGlkZXItbWFu/LW1vdmllcy1pbi1v/cmRlcl9hM2s5Lmpw/Zw">
+
+<img src="https://imgs.search.brave.com/Xnaai459qhAXTI_jiFbBWFsbrOGhhEjpYiGPCkFJwj0/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvdGh1bWJu/YWlsL3NwaWRlci1t/YW4tbm8td2F5LWhv/bWUtMTkyMC14LTEw/ODAtcGljdHVyZS0w/cDA4M2Rsc2RzYW1p/bmh5LndlYnA">
+
+</div>
+
 </div>
 
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
-<h3>Footer Links</h3>
-<a href="#">Facebook</a> |
-<a href="#">Instagram</a> |
+
+<h2>🌐 Redes Sociales</h2>
+
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
 <a href="#">TikTok</a>
+
+<p>
+Gracias por visitar mi página personal 💚
+</p>
+
 </div>
 
 </div>
